@@ -7,5 +7,10 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('deploy') {
+            steps {
+                bat 'npm start'
+            }
+        }
     }
 }
