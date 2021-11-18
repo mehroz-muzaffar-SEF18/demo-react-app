@@ -3,7 +3,9 @@ pipeline {
     tools {nodejs "Nodejs"}
     stages {
         stage('build') {
-            bat 'npm install'
+            steps {
+                bat 'npm install'
+            }
         }
     }
 }
